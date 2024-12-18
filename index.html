@@ -7,30 +7,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Admin Dashboard</h1>
-    <nav>
-      <a href="#users">Manage Users</a>
-      <a href="#content">Manage Content</a>
-      <a href="#settings">Settings</a>
-    </nav>
-  </header>
-  <main>
-    <section id="users">
-      <h2>Manage Users</h2>
-      <p>Placeholder for user management actions.</p>
-    </section>
-    <section id="content">
-      <h2>Manage Content</h2>
-      <p>Placeholder for content management actions.</p>
-    </section>
-    <section id="settings">
-      <h2>Settings</h2>
-      <p>Placeholder for admin settings.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Admin Panel</p>
-  </footer>
-</body>
+    <div id="login">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="admin-panel" style="display: none;">
+      <h1>Welcome to the Admin Dashboard</h1>
+      <p>Manage your content here.</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
